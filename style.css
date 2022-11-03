@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.flexrow {
+    display: flex;
+}
+
+.card div {
+    background-color: #00a0c0;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.card {
+    background-color: #00a0c0;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: none;
+}
+
+#back {
+    display: none !important;
+}
