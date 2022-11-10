@@ -1,7 +1,11 @@
 var stav;
-stav = "idle";
-var otoceno = [];
-var hotovo = [];
+var otoceno;
+var hotovo;
+
+const dvojice = ["11,23", "12,24", "13,31", "14,22", "21,32", "23,34"];
+
+const front = "F";
+const back= "<img src='neotec_logo.png'>";
 
 window.addEventListener("load", function(event) {
     const karty = document.getElementsByClassName("card");
@@ -18,12 +22,13 @@ window.addEventListener("load", function(event) {
 
 function otocit(poziceF) {
     const karticka = document.getElementById(poziceF); // Získat objekt elementu
-    switch(karticka.innerText) { // Změna stavu
+    switch(karticka.innerHTML) { // Změna stavu
         case "F":
-            karticka.innerHTML = "B";
+            console.log("Tato karta je už otočená!");
             break;
         case "B":
-            karticka.innerHTML = "F";
+            karticka.innerHTML = front;
+            otoceno.push(karticka);
             break;
     }
 }
