@@ -33,14 +33,16 @@ function karta(radek, sloupec) {
         case 'idle':
             stav = "not_idle"; // Čekám na druhou kartičku
             otocit(radek.toString() + sloupec.toString());
-            console.log("Klik na kartičku na řádku " + radek + sloupec);
+            console.log("Klik na kartičku " + radek + sloupec);
             break;
         case 'not_idle':
-            stav = "idle"; // Už mám druhou kartičku
-            let pozice = radek.toString() + sloupec.toString();
-            otocit(pozice);
-            console.log("Klik na kartičku na řádku " + radek + sloupec);
-            break;
+            if(otoceno.length === 1) {
+                stav = "idle"; // Už mám druhou kartičku
+                let pozice = radek.toString() + sloupec.toString();
+                otocit(pozice);
+                console.log("Klik na kartičku " + radek + sloupec);
+                break;
+            }
     }
 
 }
