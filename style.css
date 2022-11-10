@@ -19,7 +19,11 @@
 }
 
 .card {
-    background-color: #00a0c0;
+    background: rgb(77,255,166);
+    background: -moz-radial-gradient(circle, rgba(77,255,166,1) 0%, rgba(9,121,105,1) 125%);
+    background: -webkit-radial-gradient(circle, rgba(77,255,166,1) 0%, rgba(9,121,105,1) 125%);
+    background: radial-gradient(circle, rgba(77,255,166,1) 0%, rgba(9,121,105,1) 125%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4dffa6",endColorstr="#097969",GradientType=1);
     width: 90px;
     height: 90px;
     display: flex;
@@ -27,6 +31,12 @@
     align-items: center;
     margin: 10px;
     border: none;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 60px;
+    height: 50px;
 }
 
 #back {

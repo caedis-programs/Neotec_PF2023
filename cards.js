@@ -3,19 +3,18 @@ stav = "idle";
 var otoceno = [];
 var hotovo = [];
 
-
-function startHry() {
-    const karti = document.getElementsByClassName("karta");
-    for (var i = 0; i < karti.length; i++) {
-        karti[i].innerHTML = "B";
+window.addEventListener("load", function(event) {
+    const karty = document.getElementsByClassName("card");
+    console.log("Startuju hru... Počet kartiček je " + karty.length);
+    stav = "idle";
+    otoceno = [];
+    hotovo = [];
+    for (var i = 0; i < karty.length; i++) {
+//        karty[i].innerHTML = "B";
+        karty[i].innerHTML = back;
+        console.log("Kartička $i nastavena na B");
     }
-}
-
-
-function resetKarta(item) {
-    item.innerText = "B";
-}
-
+});
 
 function otocit(poziceF) {
     const karticka = document.getElementById(poziceF); // Získat objekt elementu
