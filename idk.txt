@@ -1,0 +1,36 @@
+case '11':
+            retText = "<span style='color: #00a3ff'>F</span>";
+            break;
+        case '12':
+            retText = "<span style='color: #345be3'>2</span>";
+            break;
+        case '13':
+            retText = "<span style='color: #ffe903'>2</span>";
+            break;
+        case '14':
+            retText = "<span style='color: #00a3ff'>F</span>";
+            break;
+        case '21':
+            retText = "<span style='color: #ae00ff'>0</span>";
+            break;
+        case '22':
+            retText = "<span style='color: #00eaff'>P</span>";
+            break;
+        case '23':
+            retText = "<span style='color: #ae00ff'>0</span>";
+            break;
+        case '24':
+            retText = "<span style='color: #508641'>2</span>";
+            break;
+        case '31':
+            retText = "<span style='color: #508641'>2</span>";
+            break;
+        case '32':
+            retText = "<span style='color: #ffe903'>2</span>";
+            break;
+        case '33':
+            retText = "<span style='color: #345BE3FF'>2</span>";
+            break;
+        case '34':
+            retText = "<span style='color: #00eaff'>P</span>";
+            break

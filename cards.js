@@ -2,7 +2,11 @@ var stav;
 var otoceno;
 var hotovo;
 
-const dvojice = ["11,23", "12,24", "13,31", "14,22", "21,32", "23,34"];
+const dvojice = ["11,14", "12,33", "13,32", "21,23", "22,34", "24,31"];
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 const front = "F";
 const back= "<img src='neotec_logo.png'>";
