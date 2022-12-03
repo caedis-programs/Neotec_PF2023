@@ -65,7 +65,7 @@ async function winGame() {
     lettercont.style.left = "50%";
     lettercont.style.bottom = "auto";
     lettercont.style.borderRadius = "20px";
-    lettercont.style.transform = "translate(-50%, -50%) scale(2.0s)";
+    lettercont.style.transform = "translate(-50%, -50%) scale(2.0)";
     await sleep(1500);
 
     l2.style.textDecoration = "line-through";
@@ -185,7 +185,7 @@ async function otocit(poziceF) {
                 if (isThisTheCouple(otoceno[0].id + "," + otoceno[1].id) || isThisTheCouple(otoceno[1].id + "," + otoceno[0].id)) {
                     console.log("It's a match! : " + otoceno[0].id + "," + otoceno[1].id);
                     hotovo.push(otoceno[0].id + "," + otoceno[1].id);
-                    console.log("Momentální počet bičis : " + hotovo.length);
+                    console.log("Momentální počet párů : " + hotovo.length);
                     const letterbox = document.getElementById("letter-" + getRawPismenko(poziceF)); // Získat objekt elementu
                     letterbox.innerHTML = getPismenko(poziceF);
                     await sleep(1000);
@@ -198,9 +198,9 @@ async function otocit(poziceF) {
                 } else {
                     var tempKarta = otoceno[0];
                     otoceno = [];
-                    console.log("Otáčím Matěje zpátky...");
+                    console.log("Otáčím karty zpátky...");
                     await sleep(1000);
-                    console.log("Odmatějeno!");
+                    console.log("Otočeno zpět!");
                     tempKarta.dataset.status = "B";
                     tempKarta.innerHTML = back;
                     karticka.dataset.status = "B";
