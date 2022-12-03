@@ -65,14 +65,14 @@ async function winGame() {
     lettercont.style.left = "50%";
     lettercont.style.bottom = "auto";
     lettercont.style.borderRadius = "20px";
-    lettercont.style.transform = "translate(-50%, -50%) scale(2.2)";
-    await sleep(1000);
+    lettercont.style.transform = "translate(-50%, -50%) scale(2.0s)";
+    await sleep(1500);
 
     l2.style.textDecoration = "line-through";
     l2.style.textDecorationThickness = "6px";
     l2.style.textDecorationColor = "red";
     console.log(l2);
-    await sleep(1000);
+    await sleep(1500);
     l2.style.textDecoration = "none";
     l2.innerHTML = "<span style='color: #ffffff; font-family: Rubik Burned, cursive;'>3</span>";
 
