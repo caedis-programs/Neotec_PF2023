@@ -35,7 +35,8 @@ let text = '{ "cards" : [' +
 
 const back = "<img src='neotec_logo.png'>";
 
-window.addEventListener("load", function(event) {
+window.addEventListener("load", async function (event) {
+    const pravidla = document.querySelector(".pravidla");
     const karty = document.getElementsByClassName("card");
     console.log("Startuju hru... Počet kartiček je " + karty.length);
     stav = "idle";
@@ -47,6 +48,8 @@ window.addEventListener("load", function(event) {
         karty[i].dataset.status = "B";
         console.log("Kartička $i nastavena na B");
     }
+    await sleep(4000);
+    pravidla.style.display = "none";
 });
 
 function isThisTheCouple(couple) {
